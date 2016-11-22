@@ -20,7 +20,7 @@ export function setupPingInterval(bot) {
 export function startBot(cb) {
   const bot = slack.rtm.client();
 
-  bot.started((initalPayload) => {
+  bot.started((initialPayload) => {
     // Keep the bot connected indefinitely:
     setupPingInterval(bot);
 
